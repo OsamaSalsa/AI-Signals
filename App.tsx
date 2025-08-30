@@ -13,7 +13,6 @@ import { INITIAL_WATCHLIST_ASSETS } from './constants';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import ProfilePage from './components/ProfilePage';
 import EconomicCalendarPage from './components/EconomicCalendarPage';
-import TickerTapeWidget from './components/TickerTapeWidget';
 
 const App: React.FC = () => {
   const [signalHistory, setSignalHistory] = useState<Signal[]>([]);
