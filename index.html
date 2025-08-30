@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Signals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // Light Theme
+              'background': '#FFFFFF',
+              'card': '#F9FAFB',
+              'border': '#E5E7EB',
+              'text-main': '#111827',
+              'text-muted': '#6B7280',
+              'input-bg': '#F3F4F6',
+              
+              // Dark Theme
+              'dark-background': '#0A192F',
+              'dark-card': '#172A46',
+              'dark-border': '#233554',
+              'dark-text-main': '#CCD6F6',
+              'dark-text-muted': '#8892B0',
+              'dark-input-bg': '#0A192F',
+
+              // Shared Colors
+              'accent': '#3B82F6',
+              'accent-hover': '#2563EB',
+              'accent-light': '#60A5FA',
+              'success': '#16A34A',
+              'danger': '#DC2626',
+              'success-soft': 'rgba(22, 163, 74, 0.1)',
+              'danger-soft': 'rgba(220, 38, 38, 0.1)',
+              'accent-soft': 'rgba(59, 130, 246, 0.1)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'pulse-bg': 'pulseBg 2s infinite ease-in-out',
+              'pulse-candle': 'pulseCandle 1.5s infinite ease-in-out',
+              'pulse-wick': 'pulseWick 1.5s infinite ease-in-out',
+              'pulse-dot': 'pulseDot 1.6s infinite ease-in-out',
+              'draw-line': 'drawLine 4s ease-in-out infinite',
+              'float-up': 'floatUp 4s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              pulseBg: {
+                '0%, 100%': { backgroundColor: 'rgba(59, 130, 246, 0.1)' },
+                '50%': { backgroundColor: 'rgba(59, 130, 246, 0.2)' },
+              },
+              pulseCandle: {
+                '0%, 100%': { transform: 'scaleY(1)', opacity: '0.8' },
+                '50%': { transform: 'scaleY(1.2)', opacity: '1' },
+              },
+              pulseWick: {
+                '0%, 100%': { transform: 'scaleY(1)', opacity: '0.7' },
+                '50%': { transform: 'scaleY(1.15)', opacity: '1' },
+              },
+              pulseDot: {
+                '0%, 80%, 100%': { transform: 'scale(0.8)', opacity: '0.7' },
+                '40%': { transform: 'scale(1.2)', opacity: '1' },
+              },
+              drawLine: {
+                'to': { 'stroke-dashoffset': '0' },
+              },
+              floatUp: {
+                '0%': { transform: 'translateY(0px)', opacity: '0.7' },
+                '100%': { transform: 'translateY(-25px)', opacity: '0' },
+              },
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.15.0",
+    "vite": "https://aistudiocdn.com/vite@^7.1.3",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-text-main">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
