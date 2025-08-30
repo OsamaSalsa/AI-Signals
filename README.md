@@ -1,0 +1,2 @@
+# AI-Signals
+A premium AI-powered trading analysis tool providing real-time market analysis and trading signals for Forex, Commodities, Indices, and Crypto. Discover our core principles, mission, and vision.
